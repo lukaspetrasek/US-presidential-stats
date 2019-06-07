@@ -1,0 +1,7 @@
+word cluster from descriptions / famous quotes / proffesions
+
+pie chart of proffesions / religion
+
+age x vote proportion scatter
+
+compute time between death and last day in office + add vizualizations
