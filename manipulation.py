@@ -188,11 +188,11 @@ def correct_elections_data_indices(
     '''
     elections_index = elections_data.index.tolist()
 
-    for president in all_presidents_data_df.index:
+    for president in presidents_data.index:
         first_name_president = president.split(' ')[0]
         surname_president = president.split(' ')[-1]
 
-        for candidate in election_results_df.index:
+        for candidate in elections_data.index:
             first_name_candidate = candidate.split(' ')[0]
             surname_candidate = candidate.split(' ')[-1]
 
