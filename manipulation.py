@@ -1,4 +1,5 @@
 from typing import Optional
+import functools
 import sys
 
 import geopy.geocoders
