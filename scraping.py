@@ -162,7 +162,7 @@ class MillerScraper:
         his terms.
         '''
         # assert that 'Grover Cleveland 2' entry doesn't exist already
-        assert 'Grover Cleveland 2' not in miller_scrape.fast_facts.keys()
+        assert 'Grover Cleveland 2' not in self.fast_facts.keys()
 
         # create entries for Cleveland's second term
         self.fast_facts['Grover Cleveland 2'] = {
