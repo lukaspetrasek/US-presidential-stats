@@ -1,14 +1,20 @@
+import sys
+
 import geopy.geocoders
 import geopy.extra.rate_limiter
 import numpy as np
 import pandas as pd
 
+sys.path.append('../')
+
+import scraping
+
 
 
 def get_all_presidents_data_df(
     *,
-    miller_scrape: MillerScraper, 
-    potus_scrape: PotusScraper
+    miller_scrape: scraping.MillerScraper, 
+    potus_scrape: scraping.PotusScraper
 ) -> pd.DataFrame:
     ''' 
     Merges available data about US presidents from miller_scrape and potus_scrape into one 
@@ -29,7 +35,7 @@ def get_all_presidents_data_df(
     return pd.DataFrame(all_presidents_data).T
 
 
-def get_election_results_df(potus_scrape: PotusScraper) -> pd.DataFrame:
+def get_election_results_df(potus_scrape: scraping.PotusScraper) -> pd.DataFrame:
     ''' 
     Merges available data on election results from potus_scrape into one DataFrame.
 
